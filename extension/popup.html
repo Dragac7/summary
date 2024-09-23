@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            text-align: center;
+            width: 400px;
+            height: 700px;
+            overflow: auto;
+        }
+        textarea {
+            width: 300px;
+            height: 400px;
+            padding: 30px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            resize: none;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Summarizer</h3>
+        <textarea id="response-box" placeholder="Summary will appear here..."></textarea>
+        <button id="capture-html-btn">Capture and Send page info</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Summarizer",
+    "version": "1.0",
+    "description": "An extension that read the current page and provide a summary powered by AI",
+    "permissions": ["tabs", "activeTab", "scripting"],
+    "background": {
+        "scripts": ["background.js"],
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Summarizer",
+        "default_icon": {
+            "16": "./sloth.png"
+          }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content_script.js"]
+        }
+    ],
+    "host_permissions": [
+        "http://localhost:5555/*"
+    ]
+}
