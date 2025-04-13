@@ -5,7 +5,7 @@ Grab some info from the page, then provide a summary powered by AI.
 
 # Quickstart
 ## Python server
-Note: create a venv in lazy-summary/summarizer for fking sake
+Note: create a venv in lazy-summary/summarizer
 1. Activate venv
 2. Install requirements: ```pip install -r requirements.txt```
 3. Run server: ```python server.py```
